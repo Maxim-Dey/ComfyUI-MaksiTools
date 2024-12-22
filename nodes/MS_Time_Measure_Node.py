@@ -28,7 +28,7 @@ class  MS_Time_Measure_Node:
         time_out = float(datetime.datetime.now().timestamp())
 
         time_execution = (
-            f"{round(time_out - time_in, 1)}" if time_in is not None else "N/A"
+            f"{round(time_out - time_in, 1)} sec" if time_in is not None else "N/A"
         )
 
         return data, time_out, time_execution
