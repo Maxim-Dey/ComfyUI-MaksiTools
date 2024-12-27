@@ -6,8 +6,8 @@ class AnyType(str):
         return False
 any_type = AnyType("*")
 
-class  MS_Time_Measure_Node:
-    CATEGORY = "Maksim's Tools"
+class  MT_Time_Measure_Node:
+    CATEGORY = "MaksiTools"
     
     @classmethod
     def INPUT_TYPES(cls):
