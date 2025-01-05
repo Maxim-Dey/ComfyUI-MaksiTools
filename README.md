@@ -11,4 +11,4 @@ It is my toolkit for work in ComfyUI
 ### 2. DataTypes
 > These nodes are needed to apply basic data types.
 > 
-![DataTypes.png](images/DataTypes.png)
+> ![DataTypes.png](images/DataTypes.png)
