@@ -1,5 +1,7 @@
+datatype = "MaksiTools/🔢 DataTypes"
+
 class ReturnBooleanNode:
-    CATEGORY = "MaksiTools/DataTypes"
+    CATEGORY = datatype
     RETURN_TYPES = ("BOOL",)
     FUNCTION = "return_boolean"
     RETURN_NAMES = ("boolean_out",)
@@ -16,7 +18,7 @@ class ReturnBooleanNode:
         return (boolean_input,)
 
 class ReturnIntegerNode:
-    CATEGORY = "MaksiTools/DataTypes"
+    CATEGORY = datatype
     RETURN_TYPES = ("INT",)
     FUNCTION = "return_integer"
     RETURN_NAMES = ("integer_out",)
@@ -33,7 +35,7 @@ class ReturnIntegerNode:
         return (integer_input,)
 
 class ReturnFloatNode:
-    CATEGORY = "MaksiTools/DataTypes"
+    CATEGORY = datatype
     RETURN_TYPES = ("FLOAT",)
     FUNCTION = "return_float"
     RETURN_NAMES = ("float_out",)
@@ -49,8 +51,8 @@ class ReturnFloatNode:
     def return_float(self, float_input):
         return (float_input,)
     
-class ReturnStringNode:
-    CATEGORY = "MaksiTools/DataTypes"
+class ReturnMultilineStringNode:
+    CATEGORY = datatype
     RETURN_TYPES = ("STRING",)
     FUNCTION = "return_string"
     RETURN_NAMES = ("string_out",)

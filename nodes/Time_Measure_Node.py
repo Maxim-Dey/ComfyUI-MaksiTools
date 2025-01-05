@@ -6,8 +6,8 @@ class AnyType(str):
         return False
 any_type = AnyType("*")
 
-class  MT_Time_Measure_Node:
-    CATEGORY = "MaksiTools/Debugging"
+class  Time_Measure_Node:
+    CATEGORY = "MaksiTools/🔧 Debugging "
     RETURN_TYPES = (any_type, "FLOAT", "STRING")
     RETURN_NAMES = ("data", "time_out", "time_execution")
     FUNCTION = "execute"

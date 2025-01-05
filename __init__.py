@@ -1,12 +1,12 @@
-from .nodes.MT_Time_Measure_Node import MT_Time_Measure_Node
-from .nodes.Datatype_Nodes import ReturnBooleanNode, ReturnIntegerNode, ReturnFloatNode, ReturnStringNode
+from .nodes.Time_Measure_Node import Time_Measure_Node
+from .nodes.Datatype_Nodes import ReturnBooleanNode, ReturnIntegerNode, ReturnFloatNode, ReturnMultilineStringNode
 
 NODE_CLASS_MAPPINGS = {
-    "MT Time Measure Node": MT_Time_Measure_Node,
-    "Return Boolean": ReturnBooleanNode,
-    "Return Integer": ReturnIntegerNode,
-    "Return Float": ReturnFloatNode,
-    "Return String": ReturnStringNode,
+    "🔧 Time Measure Node": Time_Measure_Node,
+    "🔢 Return Boolean": ReturnBooleanNode,
+    "🔢 Return Integer": ReturnIntegerNode,
+    "🔢 Return Float": ReturnFloatNode,
+    "🔢 Return Multiline String": ReturnMultilineStringNode,
 }
 
 __all__ = ["NODE_CLASS_MAPPINGS"]
