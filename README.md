@@ -8,6 +8,6 @@ It is my toolkit for work in ComfyUI
 > 
 > ![MS_Time_Measure_Node.png](images/MS_Time_Measure_Node.png)
 
-### 1. DataTypes
+### 2. DataTypes
 > These nodes are needed to apply basic data types.
 ![DataTypes.png](images/DataTypes.png)
