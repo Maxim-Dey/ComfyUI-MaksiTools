@@ -10,12 +10,12 @@ class ReturnBooleanNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "boolean_input": ("BOOL", {"default": False})
+                "set_boolean": ("BOOLEAN", {"default": False, "label_on": "True", "label_off": "False"})
             }
         }
 
-    def return_boolean(self, boolean_input):
-        return (boolean_input,)
+    def return_boolean(self, set_boolean):
+        return (set_boolean,)
 
 class ReturnIntegerNode:
     CATEGORY = datatype
