@@ -7,7 +7,10 @@ class AnyType(str):
 any_type = AnyType("*")
 
 class  MT_Time_Measure_Node:
-    CATEGORY = "MaksiTools"
+    CATEGORY = "MaksiTools/Debugging"
+    RETURN_TYPES = (any_type, "FLOAT", "STRING")
+    RETURN_NAMES = ("data", "time_out", "time_execution")
+    FUNCTION = "execute"
     
     @classmethod
     def INPUT_TYPES(cls):
@@ -19,10 +22,6 @@ class  MT_Time_Measure_Node:
                 "time_in": ("FLOAT", {"forceInput": True}),
             },
         }
-
-    RETURN_TYPES = (any_type, "FLOAT", "STRING")
-    RETURN_NAMES = ("data", "time_out", "time_execution")
-    FUNCTION = "execute"
 
     def execute(self, data, time_in=None):
         time_out = float(datetime.datetime.now().timestamp())
@@ -36,4 +35,4 @@ class  MT_Time_Measure_Node:
     @staticmethod
     def IS_CHANGED(*args, **kwargs):
         # Returning a unique value (e.g., current timestamp)
-        return datetime.datetime.now().isoformat()
+        return datetime.datetime.now().isoformat() 
