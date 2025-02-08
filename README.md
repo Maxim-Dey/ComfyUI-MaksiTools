@@ -1,5 +1,5 @@
 # ComfyUI-MaksiTools
-It is my toolkit for work in ComfyUI
+This is an evolving set of tools for testing the workflows in ComfyUI.
 
 ## List of nodes:
 ### 1. Debugging 
